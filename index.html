@@ -7,15 +7,17 @@
     <title>Calculadora de IMC</title>
 </head>
 <body>
+<main>
     <h2>Calcule seu IMC</h2>
-        
-    
-    
-    
-    
-    
-    
-    
+        <form>
+            <label for="seuPeso"> Digite seu peso (KG)</label><br>
+                <input type="number" name="seuPeso" id="seuPeso" placeholder="80"><br>
+            <label for="suaAltura"> Digite sua altura (M)</label><br>
+                <input type="number" name="suaAltura" id="suaAltura" placeholder="1,80"><br>
+            <input type="submit" value="Calcular" onclick="calcIMC()">
+        </form>
+        <span id="resultado"></span>
+</main>
         <script src="src/script.js"></script>
 </body>
 </html>

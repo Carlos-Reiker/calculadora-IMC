@@ -5,6 +5,8 @@ var resultado = document.querySelector('#resultado');
 function calcIMC(){
     var imc = (peso.value / (altura.value * altura.value)).toFixed(2);
     resultado.innerHTML = imc;}*/
+
+//CALCULO DE IMC
 window.onload = iniciar;
 
 function iniciar(){
@@ -20,5 +22,17 @@ function calcIMC(){
 var imc = (peso / (altura * altura)).toFixed(2);
 
 var resultado = document.getElementById('resultado');
-resultado.innerHTML = imc    
+resultado.innerHTML = imc;   
+}
+
+//FEEDBACK
+
+var feedbackResultado = document.getElementById('feedback')
+
+if ( resultado.value < 18,5){
+    feedbackResultado.innerHTML = "Você está abaixo do peso."
+} else if( resultado.value >= 18,5){
+    feedbackResultado.innerHTML = "Seu peso está normal"
+}else if(resultado.value >= 25,0){
+    feedbackResultado.innerHTML = "Você está em sobrepeso"
 }

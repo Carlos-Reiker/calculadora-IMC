@@ -23,16 +23,18 @@ var imc = (peso / (altura * altura)).toFixed(2);
 
 var resultado = document.getElementById('resultado');
 resultado.innerHTML = imc;   
+
+var feedbackResultado = document.getElementById('feedback')
+
+if ( imc < 18.5){
+    feedbackResultado.innerHTML = "Você está abaixo do peso."
+} else if( imc == 18.5){
+    feedbackResultado.innerHTML = "Seu peso está normal"
+}else if(imc >= 25.0){
+    feedbackResultado.innerHTML = "Você está em sobrepeso"
+}
 }
 
 //FEEDBACK
 
-var feedbackResultado = document.getElementById('feedback')
 
-if ( resultado.value < 18,5){
-    feedbackResultado.innerHTML = "Você está abaixo do peso."
-} else if( resultado.value >= 18,5){
-    feedbackResultado.innerHTML = "Seu peso está normal"
-}else if(resultado.value >= 25,0){
-    feedbackResultado.innerHTML = "Você está em sobrepeso"
-}

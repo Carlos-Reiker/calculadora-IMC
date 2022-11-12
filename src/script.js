@@ -1,4 +1,4 @@
-var caracteres = [' ', 'a',]
+
 
 //CALCULO DE IMC
 window.onload = iniciar;
@@ -21,20 +21,26 @@ resultado.innerHTML = imc;
 var feedbackResultado = document.getElementById('feedback')
 
     if ( imc <= 18.4){
-        feedbackResultado.innerHTML = "Abaixo do peso normal."
+        feedbackResultado.innerHTML = "Abaixo do peso normal ⚠️"
     }else if(imc <= 24.9){
-        feedbackResultado.innerHTML = "Seu peso está normal"
+        feedbackResultado.innerHTML = "Seu peso está normal ✅"
     }else if(imc <= 29.9){
-        feedbackResultado.innerHTML = "Excesso de peso"
+        feedbackResultado.innerHTML = "Excesso de peso ⚠️"
     }else if(imc <= 34.9){
-        feedbackResultado.innerHTML = "Obesidade classe I"
+        feedbackResultado.innerHTML = "Obesidade classe I ⚠️"
     }else if(imc <= 39.9){
-        feedbackResultado.innerHTML = "Obesidade classe II"
+        feedbackResultado.innerHTML = "Obesidade classe II ⚠️"
+    }else if(imc >= 40.0){
+        feedbackResultado.innerHTML = "Obesidade classe III (Mórbida) ⚠️"
     }else{
-        feedbackResultado.innerHTML = "Obesidade classe III"
+        alert("Insira corretamente seu Peso e Altura.")
     }
 }
 
 
 
-
+/*var inputs = document.getElementsByTagName('input');
+var caracteres = ' abcdefghijklmnopqrstuvwxyz';
+if(inputs.value = caracteres){
+    alert("Insira apenas números.")
+}*/

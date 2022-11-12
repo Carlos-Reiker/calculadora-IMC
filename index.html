@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+    <link rel="stylesheet" href="src/style.css">
     <title>Calculadora de IMC</title>
 </head>
 <body>
-    
+    <img src="src/images/pexels-pixabay-53404.jpg" alt="">
 <main>
+    
     <h2>Calcule seu IMC</h2>
         <form autocomplete="off">
             <label> Digite seu peso (kg)</label><br>
@@ -17,11 +18,13 @@
             <label> Digite sua altura (m)</label><br>
                 <input type="text" id="suaAltura" value="1.80" required><br>
 
-            <button id="btnCalc" type="button" onclick="calcIMC()">Calcular</button>
+            <button id="btnCalc" type="button" onclick="calcIMC()">
+                <span>Calcular</span>
+            </button>
             <!--<input type="submit" value="Calcular" onclick="calcIMC()">-->
         </form>
         
-        <span id="resultado"></span>
+        <p id="resultado"></p>
         <p id="feedback"></p>
 </main>
         <script src="src/script.js"></script>

@@ -1,10 +1,4 @@
-/*var peso = document.querySelector('#seuPeso');
-var altura = document.querySelector('#suaAltura');
-var resultado = document.querySelector('#resultado'); 
-
-function calcIMC(){
-    var imc = (peso.value / (altura.value * altura.value)).toFixed(2);
-    resultado.innerHTML = imc;}*/
+var caracteres = [' ', 'a',]
 
 //CALCULO DE IMC
 window.onload = iniciar;
@@ -23,18 +17,24 @@ var imc = (peso / (altura * altura)).toFixed(2);
 
 var resultado = document.getElementById('resultado');
 resultado.innerHTML = imc;   
-
+//FEEDBACK
 var feedbackResultado = document.getElementById('feedback')
 
-if ( imc < 18.5){
-    feedbackResultado.innerHTML = "Você está abaixo do peso."
-} else if( imc == 18.5){
-    feedbackResultado.innerHTML = "Seu peso está normal"
-}else if(imc >= 25.0){
-    feedbackResultado.innerHTML = "Você está em sobrepeso"
-}
+    if ( imc <= 18.4){
+        feedbackResultado.innerHTML = "Abaixo do peso normal."
+    }else if(imc <= 24.9){
+        feedbackResultado.innerHTML = "Seu peso está normal"
+    }else if(imc <= 29.9){
+        feedbackResultado.innerHTML = "Excesso de peso"
+    }else if(imc <= 34.9){
+        feedbackResultado.innerHTML = "Obesidade classe I"
+    }else if(imc <= 39.9){
+        feedbackResultado.innerHTML = "Obesidade classe II"
+    }else{
+        feedbackResultado.innerHTML = "Obesidade classe III"
+    }
 }
 
-//FEEDBACK
+
 
 

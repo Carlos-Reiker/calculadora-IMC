@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 body{
   font-family: 'Roboto', sans-serif;
   font-size: 2em;
@@ -8,10 +7,11 @@ body{
   background-size: cover;
 }
 h1{
-  background-color: aqua;
-  width: 8em;
+  color: #025920;
+  width: 9em;
   height: 1em;
-  margin: auto; 
+  margin: 2% auto; 
+  text-align: center;
 }
 img{
   width: 100%;
@@ -19,30 +19,60 @@ img{
 }
 main{
   
-  background-color:#e00000;
-  width: 700px;
-  height: 600px;
-  margin: 5% auto;
+  background-color: #f2f2f2e0;
+  width: 20em;
+  height: 20em;
+  margin: auto;
   border-radius: 1.5em;
 }
 
 #formulario{
-  display: flexbox;
-  background-color: pink;
-  width: 18em;
-  height: 18em;
-  margin: auto;
+  display: inline-block;
   
+  width: 15em;
+  height: 15em;
+  margin: 2.5em;
+  
+}
+input {
+  text-align: left;
+  font-size: 0.7em;
+  font-weight: bold;
+  width: 10%;
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #cad996b4;
+  color: #0d0c22;
+  transition: .3s ease;
+ }
+ 
+ input:focus, input:hover {
+  outline: none;
+  border-color: #05aff2c9;
+  background-color: #CAD996;
+  box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+}
+form, p{
+  
+  text-align: center;
+}
+p{
+  font-weight: bold;
 }
 /*ESTILIZAÇÃO DO BOTÃO*/
 button{
+    margin-top: 2em;  
     background: #CAD996;
     border: none;
     padding: 10px 20px;
     display: inline-block;
-    font-size: 15px;
+    font-size: 25px;
     font-weight: 600;
-    width: 120px;
+    width: 50%;
     text-transform: uppercase;
     cursor: pointer;
     transform: skew(-21deg);

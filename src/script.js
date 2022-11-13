@@ -16,7 +16,7 @@ function calcIMC(){
 var imc = (peso / (altura * altura)).toFixed(2);
 
 var resultado = document.getElementById('resultado');
-resultado.innerHTML = imc;   
+resultado.innerHTML = imc + " kg/m²";   
 //FEEDBACK
 var feedbackResultado = document.getElementById('feedback')
 

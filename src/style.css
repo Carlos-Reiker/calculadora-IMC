@@ -1,47 +1,40 @@
 @charset "UTF-8";
+*{
+  margin: 0px;
+  padding: 0px;
+}
 body{
-  font-family: 'Roboto', sans-serif;
-  font-size: 2em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
   background-image: url(images/balanca.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
-h1{
-  color: #025920;
-  width: 9em;
-  height: 1em;
-  margin: 2% auto; 
-  text-align: center;
-}
-img{
-  width: 100%;
-  height: auto;
-}
+
 main{
-  
-  background-color: #f2f2f2e0;
-  width: 20em;
-  height: 20em;
-  margin: auto;
+  background-color: #f2f2f2e5;
+  width: 480px;
+  height: 480px;
+  margin: 5% auto;
   border-radius: 1.5em;
 }
 
 #formulario{
   display: inline-block;
-  
   width: 15em;
   height: 15em;
-  margin: 2.5em;
-  
+  margin: 2.5em; 
 }
 input {
-  text-align: left;
+  text-align: center;
   font-size: 0.7em;
   font-weight: bold;
-  width: 10%;
+  width: 50px;
   height: 40px;
   line-height: 28px;
-  padding: 0 1rem;
+  padding: 0 2rem;
   border: 2px solid transparent;
   border-radius: 8px;
   outline: none;
@@ -49,7 +42,9 @@ input {
   color: #0d0c22;
   transition: .3s ease;
  }
- 
+
+
+ /*ESTILIZAÇÃO DO INPUT*/
  input:focus, input:hover {
   outline: none;
   border-color: #05aff2c9;
@@ -61,8 +56,10 @@ form, p{
   text-align: center;
 }
 p{
+  margin-top: 5%;
   font-weight: bold;
 }
+
 /*ESTILIZAÇÃO DO BOTÃO*/
 button{
     margin-top: 2em;  
@@ -101,3 +98,22 @@ button{
     right: 0;
     opacity: 1;
   }
+
+  /*MEDIA QUERIES*/
+
+/* w 320 h 568*/
+@media only screen and (max-width: 320px){}
+
+  /*w 375 h 667*/
+  @media only screen and (max-width: 375px) {}
+
+    /*w 1024 h 768*/
+    @media only screen and (max-width: 1024px) {} 
+
+      /*w 1440 h 900*/
+      @media only screen and (max-width: 1440px) {}
+
+        /*w 1680 h 1050*/
+        @media only screen and (max-width: 1680px) {} 
+  
+ 

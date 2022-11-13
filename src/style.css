@@ -1,4 +1,24 @@
 @charset "UTF-8";
+/*MEDIA QUERIES*/
+
+/* w 320 h 568*/
+@media only screen and (max-width: 320px){
+  body{ 
+    background-color: #0d0c22;
+  }
+}
+  /*w 375 h 667*/
+  @media only screen and (max-width: 375px) {}
+
+    /*w 1024 h 768*/
+    @media only screen and (max-width: 1024px) {} 
+
+      /*w 1440 h 900*/
+      @media only screen and (max-width: 1440px) {}
+
+        /*w 1680 h 1050*/
+        @media only screen and (max-width: 1680px) {} 
+
 *{
   margin: 0px;
   padding: 0px;
@@ -7,24 +27,30 @@ body{
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 1.5em;
-  background-image: url(images/balanca.png);
+  /*background-image: url(images/balanca.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed;  
+  background-size: cover;*/
 }
 
 main{
-  background-color: #f2f2f2e5;
-  width: 480px;
-  height: 480px;
-  margin: 5% auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f2f2f2;
+  width: 20em;
+  height: 20em;
+  margin: auto;
   border-radius: 1.5em;
+  
 }
 
 #formulario{
   display: inline-block;
-  width: 15em;
-  height: 15em;
+  line-height: 40px;
+  width: 360px;
+  height: 360px;
   margin: 2.5em; 
 }
 input {
@@ -99,21 +125,6 @@ button{
     opacity: 1;
   }
 
-  /*MEDIA QUERIES*/
-
-/* w 320 h 568*/
-@media only screen and (max-width: 320px){}
-
-  /*w 375 h 667*/
-  @media only screen and (max-width: 375px) {}
-
-    /*w 1024 h 768*/
-    @media only screen and (max-width: 1024px) {} 
-
-      /*w 1440 h 900*/
-      @media only screen and (max-width: 1440px) {}
-
-        /*w 1680 h 1050*/
-        @media only screen and (max-width: 1680px) {} 
+  
   
  

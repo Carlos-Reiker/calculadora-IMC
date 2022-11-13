@@ -5,27 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>Calculadora de IMC</title>
 </head>
 <body>
-    <img src="src/images/pexels-pixabay-53404.jpg" alt="">
+    <h1>Calcule seu IMC</h1>
 <main>
-    
-    <h2>Calcule seu IMC</h2>
-        <form autocomplete="off">
-            <label> Digite seu peso (kg)</label><br>
-                <input type="text" id="seuPeso" value="80" required><br>
-            <label> Digite sua altura (m)</label><br>
-                <input type="text" id="suaAltura" value="1.80" required><br>
+        <div id="formulario">
 
-            <button id="btnCalc" type="button" onclick="calcIMC()">
-                <span>Calcular</span>
-            </button>
-            <!--<input type="submit" value="Calcular" onclick="calcIMC()">-->
-        </form>
-        
-        <p id="resultado"></p>
-        <p id="feedback"></p>
+            <form autocomplete="off">
+                <label> Digite seu peso (kg)</label><br>
+                    <input type="text" id="seuPeso" value="80" required><br>
+                <label> Digite sua altura (m)</label><br>
+                    <input type="text" id="suaAltura" value="1.80" required><br>
+                <button id="btnCalc" type="button" onclick="calcIMC()">
+                    <span>Calcular</span>
+                </button>
+                <!--<input type="submit" value="Calcular" onclick="calcIMC()">-->
+            </form>
+            
+            <strong>
+                <p id="resultado"></p>
+            </strong>
+            <p id="feedback"></p>
+        </div>
 </main>
         <script src="src/script.js"></script>
 </body>
